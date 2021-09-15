@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start" : "concurrently \"npm run start:server\" \"npm run start:client\"",
+    "start:server": "nodemon ./bin/www",
+    "start:client": "cd client && npm start"
   },
   "dependencies": {
     "@bootpay/server-rest-client": "^1.0.8",
