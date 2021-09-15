@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/test', function(req, res, next) {
-  res.status(200).send({ msg : "Express server test message" });
+  res.status(200).send({message : "Hello World Express!"});
 });
 
 module.exports = router;
