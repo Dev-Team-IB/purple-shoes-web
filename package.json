@@ -14,7 +14,6 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
     "web-vitals": "^1.1.2",
-
     "@bootpay/server-rest-client": "^1.0.8",
     "bcrypt": "^5.0.1",
     "cookie-parser": "^1.4.5",
