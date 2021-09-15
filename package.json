@@ -9,6 +9,7 @@
     "@bootpay/server-rest-client": "^1.0.8",
     "bcrypt": "^5.0.1",
     "bootpay-js": "^3.3.3",
+    "concurrently": "^6.2.1",
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "debug": "~2.6.9",
