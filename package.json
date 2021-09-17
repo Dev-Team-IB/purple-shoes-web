@@ -6,7 +6,7 @@
     "start": "concurrently \"npm run start:server\" \"npm run start:client\"",
     "start:server": "nodemon ./bin/www",
     "start:client": "cd client && npm start",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "heroku-postbuild": "cd client && npm install && npm run build && export PORT=3000"
   },
   "dependencies": {
     "@bootpay/server-rest-client": "^1.0.8",
