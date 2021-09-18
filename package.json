@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "start": "concurrently \"npm run start:server\" \"npm run start:client\"",
+    "start:local": "concurrently \"npm run start:server\" \"npm run start:client:local\"",
     "start:server": "nodemon ./bin/www",
-    "start:client": "cd client && npm start",
-    "heroku-postbuild": "cd client && npm install && npm run build && export PORT=3000"
+    "start:client": "cd client && npm start-heroku",
+    "start:client:local": "cd client && npm start",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "dependencies": {
     "@bootpay/server-rest-client": "^1.0.8",
