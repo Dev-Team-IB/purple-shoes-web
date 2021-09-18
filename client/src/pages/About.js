@@ -10,6 +10,7 @@ const About = () => {
                     })
                     .then((data) => {
                         console.log(data);
+                        alert(data.message);
                     });
             }}>get data</button>
         </div>

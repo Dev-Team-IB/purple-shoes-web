@@ -15,6 +15,7 @@ var userRouter = require('./routes/user');
 var chatRouter = require('./routes/chat');
 
 var app = express();
+app.listen(5000);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
