@@ -6,8 +6,8 @@
     "start": "concurrently \"npm run start:server\" \"npm run start:client\"",
     "start:local": "concurrently \"npm run start:server\" \"npm run start:client:local\"",
     "start:server": "nodemon ./bin/www",
-    "start:client": "cd client && npm start-heroku",
-    "start:client:local": "cd client && npm start",
+    "start:client": "cd client && npm start",
+    "start:client:local": "cd client && npm run start:local",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "dependencies": {
