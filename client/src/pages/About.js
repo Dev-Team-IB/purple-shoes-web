@@ -4,7 +4,7 @@ const About = () => {
     return (
         <div className="App">
             <button type="button" onClick={() => {
-                fetch('http://localhost:5000/test')
+                fetch('https://purple-shoes.herokuapp.com/test')
                     .then((res) => {
                         return res.json();
                     })

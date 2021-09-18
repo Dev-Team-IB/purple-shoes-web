@@ -7,7 +7,8 @@
     "start:local": "concurrently \"npm run start:server\" \"npm run start:client:local\"",
     "start:server": "nodemon app.js",
     "start:client": "cd client && npm start",
-    "start:client:local": "cd client && npm run start:local"
+    "start:client:local": "cd client && npm run start:local",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "dependencies": {
     "@bootpay/server-rest-client": "^1.0.8",
