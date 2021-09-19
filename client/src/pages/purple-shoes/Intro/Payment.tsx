@@ -3,7 +3,7 @@ import BootPay from "bootpay-js"
 
 const Payment = () => {
 
-    function startPayment(e){
+    function startPayment(e:any){
 
         e.preventDefault();
         
@@ -43,16 +43,16 @@ const Payment = () => {
                 custom_background: '#00a086', // [ theme가 custom 일 때 background 색상 지정 가능 ]
                 custom_font_color: '#ffffff' // [ theme가 custom 일 때 font color 색상 지정 가능 ]
             }
-        }).error(function (data) {
+        }).error(function (data: any) {
             //결제 진행시 에러가 발생하면 수행됩니다.
             console.log(data);
-        }).cancel(function (data) {
+        }).cancel(function (data: any) {
             //결제가 취소되면 수행됩니다.
             console.log(data);
-        }).ready(function (data) {
+        }).ready(function (data: any) {
             // 가상계좌 입금 계좌번호가 발급되면 호출되는 함수입니다.
             console.log(data);
-        }).confirm(function (data) {
+        }).confirm(function (data: any) {
             //결제가 실행되기 전에 수행되며, 주로 재고를 확인하는 로직이 들어갑니다.
             //주의 - 카드 수기결제일 경우 이 부분이 실행되지 않습니다.
             console.log(data);
@@ -62,10 +62,10 @@ const Payment = () => {
             } else {
                 BootPay.removePaymentWindow(); // 조건이 맞지 않으면 결제 창을 닫고 결제를 승인하지 않는다.
             }
-        }).close(function (data) {
+        }).close(function (data: any) {
             // 결제창이 닫힐때 수행됩니다. (성공,실패,취소에 상관없이 모두 수행됨)
             console.log(data);
-        }).done(function (data) {
+        }).done(function (data: any) {
             //결제가 정상적으로 완료되면 수행됩니다
             //비즈니스 로직을 수행하기 전에 결제 유효성 검증을 하시길 추천합니다.
             alert("결제 성공");

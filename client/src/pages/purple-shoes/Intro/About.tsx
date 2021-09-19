@@ -1,8 +1,7 @@
-import React from 'react';
-
 const About = () => {
-    return (
-        <div className="App">
+    return(
+        <div>
+            <h2>대충 about 이라는 뜻.</h2>
             <button type="button" onClick={() => {
                 fetch('https://purple-shoes.herokuapp.com/test')
                     .then((res) => {
@@ -14,7 +13,6 @@ const About = () => {
                     });
             }}>get data</button>
         </div>
-    );
-};
-
+    )
+}
 export default About;
